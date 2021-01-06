@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>FeedbackAnalysis</title>
+      <style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+         }
+      h1{
+         padding: 5%;
+         font-size: 36px;
+         text-align: center;
+         color: #0066FF;
+      }
+      .container{
+         padding: 5%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
+      .btn{
+         background-color:#00A6FF;
+         text-align: center;
+         margin: 2%;
+         height:70px;
+         width: 200px;
+         padding: 2%;
+         font-size: 38px;
+         color: white;
+         border-radius: 5px;
+      }
+      a:hover{
+         background-color: blue;
+      }
+  
+      </style>   
+   </head>
+   <body>
+      <header>
+         <h1 class="logo">Feedback Analysis</h1>
+         <div class="container">
+            <a class="btn" href="{{ url_for('realtime') }}" style="text-decoration: none;">Realtime</a>
+            <a class="btn" href="{{ url_for('predict') }}" style="text-decoration: none;">Predict</a>
+         </div>
+      </header>
+   </body>
+</html>
